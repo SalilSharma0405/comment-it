@@ -1,0 +1,47 @@
+.app{
+  font-size: 14px;
+}
+
+
+.commentsViewContainer{
+  width: 500px;
+
+.commentsViewContainerInner{
+
+ 
+  padding: 8px 12px 8px 12px;
+  margin-bottom: 12px;
+  background-color:  rgb(246 246 246);
+  position: relative;
+
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+
+
+    .headerName{
+      font-weight: bold;
+    }
+  }
+
+  .commentSection{
+    margin-bottom: 12px;
+  }
+
+
+  .svgContainer{
+    position: absolute;
+    cursor: pointer;
+    right: -20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #c9c9c9;
+    border-radius: 20px;
+    padding: 4px 4px 4px 4px;
+  }
+    
+}
+
+}
