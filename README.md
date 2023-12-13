@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Front End Assignment Comment it
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is deployed at [Deployment Link](https://65795a1121fd83670ec4840b--resilient-muffin-2d9039.netlify.app/).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Things that are implemented 
 
-### `npm start`
+- Validate if name and comment text is entered while adding a comment or a reply Each comment or reply should be saved with current date and time.
+- The comments and replies should be sortable date and time as shown in the design.
+- When user clicks on edit he should be able to only edit the comment text and should not be allowed to edit the name.
+- Place the delete button on the border of the comment or reply as shown in the design.
+- Persist the data in using one of the web storage so that on refresh of the page data is not lost.
+- Make sure to test the application properly before submission.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Data Structured that was followed
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+head= [
+    0.174727542257207,
+    0.8021045909932432
+]
 
-### `npm test`
+comments{
+    "0.174727542257207": {
+        "id": 0.174727542257207,
+        "date": "Wed Dec 13 2023 12:55:40 GMT+0530 (India Standard Time)",
+        "children": [
+            0.07836186415031943
+        ],
+        "name": "1",
+        "comment": "1"
+    },
+    "0.8021045909932432": {
+        "id": 0.8021045909932432,
+        "date": "Wed Dec 13 2023 12:55:45 GMT+0530 (India Standard Time)",
+        "children": [],
+        "name": "2",
+        "comment": "2"
+    },
+    "0.07836186415031943": {
+        "id": 0.07836186415031943,
+        "date": "2023-12-13T07:25:50.603Z",
+        "children": [],
+        "name": "3",
+        "comment": "3\n"
+    }
+}
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
