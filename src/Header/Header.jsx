@@ -2,19 +2,19 @@ import React from 'react'
 import './Header.scss';
 
 
-const Header = ()  => {
+const Header = () => {
   return (
     <div className='headerContainer'>
       ASSIGNMENT
       <div className='subHeading'>
-      FRONTEND ENGINEER
+        FRONTEND ENGINEER
       </div>
-    
+
     </div>
   )
 }
 
 
 export {
-    Header
+  Header
 }

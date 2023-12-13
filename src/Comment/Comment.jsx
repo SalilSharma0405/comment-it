@@ -20,7 +20,7 @@ const Comment = ({ commentObj, parentId, level = 1 }) => {
     const parsedDate = new Date(date)
 
 
-    const sortChildren = sortBy === 'asc' ? children: [...children].reverse()
+    const sortChildren = sortBy === 'asc' ? children : [...children].reverse()
 
 
     const onReplyCTA = () => {
@@ -41,14 +41,14 @@ const Comment = ({ commentObj, parentId, level = 1 }) => {
 
     }
 
-    const onDeleteCTA = ()=>{
-     deleteComment({level, parentId, id})
+    const onDeleteCTA = () => {
+        deleteComment({ level, parentId, id })
     }
 
-   
+
 
     return (
-        <div key={id} style={{ marginLeft: (level-1) * 24 }} >
+        <div key={id} style={{ marginLeft: (level - 1) * 24 }} >
             <div className="commentsViewContainerInner">
 
                 <div className='header'>
@@ -61,7 +61,7 @@ const Comment = ({ commentObj, parentId, level = 1 }) => {
                     {comment}
                 </div>
 
-               {level ===1 && <button onClick={onReplyCTA} className='commentButton'>Reply</button>}
+                {level === 1 && <button onClick={onReplyCTA} className='commentButton'>Reply</button>}
                 <button onClick={onEditCTA} className='commentButton'>Edit</button>
 
                 <div className='svgContainer' onClick={onDeleteCTA}>

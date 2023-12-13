@@ -55,7 +55,7 @@ const AddComment = ({ containerStyle = {}, commentState = 'COMMENT', parentId = 
     setState((state) => ({ ...state, [name]: value }))
   }
 
-  const onCancelCTA = ()=>{
+  const onCancelCTA = () => {
     setCurrentCommentState(null)
   }
 
@@ -81,7 +81,7 @@ const AddComment = ({ containerStyle = {}, commentState = 'COMMENT', parentId = 
         <div>
           <textarea className='textArea' value={state.comment} name='comment' placeholder='Comment' required onChange={onChangeHandler} />
         </div>
-        <div className='buttonContainer'>  <button  type='submit'>{buttonText}</button> {(commentState === 'EDIT' || commentState === 'REPLY') && <button className='cancelButton' onClick={onCancelCTA}>Cancel</button>}</div>
+        <div className='buttonContainer'>  <button type='submit'>{buttonText}</button> {(commentState === 'EDIT' || commentState === 'REPLY') && <button className='cancelButton' onClick={onCancelCTA}>Cancel</button>}</div>
       </div>
     </form>
 
